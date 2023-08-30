@@ -1,0 +1,7 @@
+{
+  "name": "Gionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
