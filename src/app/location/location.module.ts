@@ -7,14 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { LocationPageRoutingModule } from './location-routing.module';
 
 import { LocationPage } from './location.page';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LocationPageRoutingModule
+    LocationPageRoutingModule,
+    
   ],
-  declarations: [LocationPage]
+  declarations: [LocationPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LocationPageModule {}
