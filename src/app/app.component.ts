@@ -12,6 +12,7 @@ export class AppComponent {
     { title: 'Contactos', url: '/contactos', icon: 'people' },
     { title: 'Notas', url: '/favoritos', icon: 'book' },
     { title: 'Clases', url: '/clases', icon: 'newspaper' },
+    { title: 'Location', url: '/location', icon: 'location' },
     { title: 'Configuración', url: '/configuracion', icon: 'settings' },
     { title: 'Acerca de', url: '/acerca', icon: 'information' },
   
