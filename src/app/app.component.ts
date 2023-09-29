@@ -9,9 +9,12 @@ export class AppComponent {
   
   public appPages = [
     { title: 'Inicio', url: '/home', icon: 'home' },
-    { title: 'Contactos', url: '/contactos', icon: 'people' },
+    //{ title: 'Contactos', url: '/contactos', icon: 'people' },
+    { title: 'Noticias', url: '/noticias', icon: 'newspaper' },
+    { title: 'Clima', url: '/clima', icon: 'cloudy-night' },
+    
     { title: 'Notas', url: '/favoritos', icon: 'book' },
-    { title: 'Clases', url: '/clases', icon: 'newspaper' },
+    //{ title: 'Clases', url: '/clases', icon: 'newspaper' },
     { title: 'Location', url: '/location', icon: 'location' },
     { title: 'Configuración', url: '/configuracion', icon: 'settings' },
     { title: 'Acerca de', url: '/acerca', icon: 'information' },

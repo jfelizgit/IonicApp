@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
+import { HttpClient} from '@angular/common/http'
+
+
+
 
 
 @Component({
@@ -6,13 +11,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contactos.page.html',
   styleUrls: ['./contactos.page.scss'],
 })
-export class ContactosPage implements OnInit {
+export class ContactosPage {
   
-  
-  constructor() { }
+    constructor(public httpClient:HttpClient) { }
+  //ngOnInit() {}
 
-  ngOnInit() {
-    
-  }
+
 
 }
