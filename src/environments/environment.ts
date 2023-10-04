@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   mapsKey: "AIzaSyCUDH6UiO9bGTCbSgC6gGn5U7NAIgGcYHk",
   API_KEY: 'e36fc8846cee4d92ad87c3ea0d41db91',
-  API_URL: 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e36fc8846cee4d92ad87c3ea0d41db91'
+  API_URL: 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e36fc8846cee4d92ad87c3ea0d41db91',
+  
 };
 
 /*

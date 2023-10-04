@@ -14,6 +14,19 @@
     </ion-toolbar>
   </ion-header>
 
+  <!-- segmento superior de la pagina -->
+
+  <ion-segment [value]="selectedCategory" (ionChange)="segmentChanged($event)" scrollable mode="md">
+
+    <ion-segment-button 
+    *ngFor="let category of categories"
+    [value]="category">
+      <ion-label class="ion-text-capitalize">{{category}}</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+
+
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-lg="3" size-md="4" size-xs="12" *ngFor="let article of articles; let i = index">

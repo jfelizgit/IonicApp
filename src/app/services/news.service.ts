@@ -23,4 +23,14 @@ export class NewsService {
     );
   
   }
+
+  getTopHeadLinesByCaterory(category: string):Observable<Article[]>{
+
+    return this.http.get<NewResponse>(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`)
+      
+    .pipe(
+      map(({articles}) => articles)
+    );
+
+  }
 }

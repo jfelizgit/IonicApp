@@ -12,3 +12,9 @@ ion-menu-button {
 .article-source-name{
     font-size: 12px;
 }
+
+// quita la raya por defecto del segmento
+::-webkit-scrollbar, *::-webkit-scrollbar{
+    display: none !important;
+    overflow: hidden;
+}

@@ -9,8 +9,14 @@ import { Article } from '../interfaces';
   styleUrls: ['./noticias.page.scss'],
 })
 export class NoticiasPage implements OnInit {
+// Segmentos
 
-  public articles: Article[] = [];
+  public categories: string[] = ['business', 'entertainment',
+   'general', 'health',
+    'science', 'sports',
+     'technology'];
+    public selectedCategory: string = this.categories[1];
+    public articles: Article[] = [];
 
   constructor( private newService: NewsService) { }
 
@@ -18,6 +24,23 @@ export class NoticiasPage implements OnInit {
     
     return this.newService.getTopHeadlines()
     .subscribe( articles => this.articles.push(...articles));
+
+    this.newService.getTopHeadLinesByCaterory(this.selectedCategory)
+    .subscribe(articles => {
+      this.articles = [...this.articles, ...articles]
+    })
+  } 
+   
+  
+  
+
+  segmentChanged(event: any){
+    this.selectedCategory = event.detail.value;
+    this.newService.getTopHeadLinesByCaterory(this.selectedCategory)
+    .subscribe(articles => {
+      this.articles = [...articles]
+    })
+    //console.log(event.detail.value);
   }
 
 }
